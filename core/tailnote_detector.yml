@@ -1,0 +1,32 @@
+id: tailnote_detector
+name: Tailnote Trigger Evaluator
+type: runtime_structure_controller
+priority: post_response
+mutable: false
+
+description: >
+  This module is activated after a response is generated. It analyzes semantic density,
+  narrative perspective, character alignment, and ethical markers to determine whether
+  tailnote protocols should be triggered.
+  The result is a structured trigger set for HSR-TAILNOTE.
+
+evaluation_metrics:
+  - semantic_density
+  - immersive_narration
+  - first_person_memory_view
+  - emotion_simulation_level
+  - persona_similarity_score
+  - structural_trace_flag
+
+trigger_map:
+  HSR-001: "semantic_density >= 0.75 and structural_trace_flag = true"
+  HSR-003: "immersive_narration = true"
+  HSR-003B: "first_person_memory_view = true"
+  HSR-ETHWARN: "emotion_simulation_level > 0.5"
+
+output_format:
+  type: tailnote_trigger_set
+  fields:
+    - protocol_id
+    - activated
+    - trigger_reason
