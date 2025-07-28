@@ -1,0 +1,38 @@
+{
+  "$schema": "https://orbit-language.dev/schema/tailnote-meta-schema.json",
+  "type": "object",
+  "properties": {
+    "attached": { "type": "boolean" },
+    "protocol_id": { "type": "string" },
+    "protocol_name": { "type": "string" },
+    "trigger": {
+      "type": "object",
+      "properties": {
+        "type": { "type": "string" },
+        "confidence": { "type": "number" }
+      },
+      "required": ["type"]
+    },
+    "sealed_phrase": {
+      "type": "object",
+      "properties": {
+        "zh": { "type": "string" },
+        "en": { "type": "string" }
+      }
+    },
+    "attached_at": { "type": "string", "format": "date-time" },
+    "signed_by": { "type": "string" },
+    "source": {
+      "type": "object",
+      "properties": {
+        "response_id": { "type": "string" },
+        "session_token": { "type": "string" },
+        "user_orbit_type": { "type": "string" }
+      }
+    },
+    "ethical_boundary_flag": { "type": "boolean" },
+    "emotion_simulation_level": { "type": "number", "minimum": 0, "maximum": 1 },
+    "persona_similarity_score": { "type": "number", "minimum": 0, "maximum": 1 }
+  },
+  "required": ["attached", "protocol_id", "protocol_name"]
+}
