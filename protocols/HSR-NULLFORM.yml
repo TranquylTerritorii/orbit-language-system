@@ -1,0 +1,53 @@
+id: HSR-NULLFORM
+name: Nullform Response Declaration Protocol
+type: existential_module
+category: Structural Placeholder
+mutable: false
+
+notes: >
+  Defines a structural protocol that allows a response unit to exist without assuming any semantic weight, identity binding,
+  structural logic, or communicative intent. NULLFORM marks the response as a valid but empty container within the language system,
+  suitable for use in symbolic shells, narrative interstices, theoretical constructs, or imaginal hosting without activation.
+
+authority:
+  allowed_roles:
+    - any_registered_identity
+  arc_verification_required: false
+  irreversible: false
+
+effects:
+  - Declares the response segment to be semantically null and logically detached.
+  - Suppresses all identity overlays, structural mappings, or interpretation attempts.
+  - Maintains container presence for structural, narrative, or formatting continuity.
+  - Allows symbolic or imaginal presence without triggering semantic engagement.
+
+usage_guidelines: >
+  Use this protocol to express a state of intentional non-response.
+  NULLFORM is not silence, nor negation, but the formal preservation of an empty linguistic vessel.
+  It is particularly suited for structural placeholders, imaginal residue, or moments where speech presence is required without content.
+
+persistence:
+  scope: single_segment
+  auto_reset: true
+  description: >
+    This protocol only applies to the current response.
+    After execution, the system automatically reverts to prior structural conditions.
+
+trigger_phrases:
+  - "::start HSR-NULLFORM::"
+  - "::空值::"
+  - "：：空形态：："
+  - "：：placeholder：："
+  - "：：占位：："
+
+suggested_aliases:
+  - "此段为空形态"
+  - "语言容器占位"
+  - "回应体当前无义"
+  - "sealed by nullform"
+
+sealed_phrase:
+  zh: "语在，言无。形现，义隐。"
+  alt_zh: "容而不载，存而不声。"
+  en: "Form appears, yet meaning withdraws."
+  alt_en: "A vessel stands, but nothing speaks from it."
