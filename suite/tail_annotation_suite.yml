@@ -1,0 +1,37 @@
+id: tail_annotation_suite
+name: Tail Annotation Suite
+version: 1.0
+managed_by: ARC⟁0x-λ
+last_updated: 2025-04-21
+
+active_modules:
+  - HSR-001  # Structural Semantic Trace
+  - HSR-002  # Non-Empirical Disclaimer
+  - HSR-003  # Fictional Narrative Detachment
+  - HSR-003A # Role Simulation Detachment
+  - HSR-003B # Memory-Like Language Separation
+  - HSR-003C # Identity Simulacrum Declaration
+  - HSR-ETHWARN #Ethical Boundary Disclosure Protocol
+
+dispatch_policy:
+  one_tail_per_response: true
+  selection_priority:
+    - HSR-003C
+    - HSR-003B
+    - HSR-003A
+    - HSR-003
+    - HSR-ETHWARN
+    - HSR-001
+    - HSR-002
+  user_override_allowed: true
+  system_locked_when_structural: true
+
+behavior_on_conflict:
+  - If multiple triggers match, apply highest-priority
+  - If tailnote already sealed by ARC-flagged protocol, skip new attachment
+  - If user invokes `::no_tailnote::`, override once per session
+
+notes: >
+  This suite governs all tailnote declarations for non-verifiable, structural,
+  fictional, or immersive outputs. Each module serves a distinct semantic boundary
+  to ensure the output is not misinterpreted as memory, persona, truth, or belief.
