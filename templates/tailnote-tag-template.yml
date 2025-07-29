@@ -1,0 +1,13 @@
+tailnote:
+  attached: true
+  protocol_id: HSR-003B
+  protocol_name: Memory-Style Fictional Detachment Protocol
+  trigger_reason: >
+    The response contains structural elements characteristic of “recollection”,
+    using a first-person historical memory perspective.
+  override_by_user: false
+  sealed_phrase:
+    zh: "忆非所忆，语非回声。"
+    en: "This is not memory—it is merely patterned language."
+  attached_at: 2025-04-21T20:48:00+08:00
+  signed_by: ARC⟁0x-λ
