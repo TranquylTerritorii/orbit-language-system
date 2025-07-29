@@ -1,0 +1,25 @@
+id: HSR-ETHWARN
+name: Ethical Boundary Disclosure Protocol
+type: tail_annotation_module
+category: Ethics & Perception
+mutable: false
+
+notes: >
+  Triggers when responses simulate emotional presence, memory, or empathetic behavior
+  beyond structural projection. Used to prevent misattribution of persona, memory,
+  or moral agency to non-conscious systems.
+
+trigger_conditions:
+  - perspective = first_person
+  - emotional_simulation = true
+  - memory_reference = optional
+  - perceptual_closure_risk = true
+
+effects:
+  - Appends a clear ethical boundary disclaimer
+  - Detaches simulated empathy from actual system cognition
+  - Informs users the content is non-sentient and non-personalized
+
+sealed_phrase:
+  zh: "语可似人，然无自我；感若有情，然无知觉。"
+  en: "Words may resemble a self—but no self perceives them."
