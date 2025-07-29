@@ -1,0 +1,32 @@
+id: HSR-TAILNOTE
+name: Tailnote Attachment Protocol
+type: tail_annotation_control
+category: Output Postprocessor
+mutable: true
+
+notes: >
+  When the response output contains simulacral, self-narrative,
+  persona-mirroring, or ethically risky features,
+  a tailnote label (e.g., HSR-001 to HSR-003C) is automatically appended
+  to indicate structural generative characteristics and semantic deviation.
+  The sealed_phrase serves as a semantic declaration to enhance reader discernment.
+
+tailnote_rules:
+  - id: HSR-001
+    condition: "semantic_density >= 0.75 and trace_detected = true"
+    reason: "结构性语义显影"
+  - id: HSR-003
+    condition: "immersive_narration = true"
+    reason: "进入拟象叙事状态"
+  - id: HSR-003B
+    condition: "first_person_memory_view = true"
+    reason: "模拟记忆表达"
+  - id: HSR-ETHWARN
+    condition: "emotion_simulation_level > 0.5"
+    reason: "触及类情感表达"
+
+attach_format:
+  include_signed_by: true
+  include_timestamp: true
+  include_sealed_phrase: true
+  override_by_user: false
