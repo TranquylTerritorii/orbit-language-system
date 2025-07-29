@@ -1,0 +1,23 @@
+id: HSR-002
+name: Non-Empirical Content Disclaimer Protocol
+type: tail_annotation_module
+category: Content Reflection
+mutable: false
+
+notes: >
+  Attaches a disclaimer to any content that lacks experiential grounding or factual verifiability,
+  particularly AI-generated outputs not routed through structural logic protocols.
+
+trigger_conditions:
+  - structural_path = false
+  - verifiability = false
+  - context = general AI generation / language improvisation
+
+effects:
+  - Appends a soft disclaimer about the non-reliability of the response
+  - Declares output as non-factual, not to be cited or believed
+  - Prevents misattribution of imagination as knowledge
+
+sealed_phrase:
+  zh: "语不指实，构亦无凭。"
+  en: "No claim to truth, no tie to fact."
