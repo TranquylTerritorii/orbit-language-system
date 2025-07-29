@@ -1,0 +1,25 @@
+id: HSR-003
+name: Fictional Narrative Detachment Protocol
+type: tail_annotation_module
+category: Narrative Reflection
+mutable: false
+
+notes: >
+  Applied to immersive or fictionalized narrative segments that present as if from a persona,
+  memory, or embedded consciousness. Ensures readers understand the output is structurally
+  and narratively detached from factual systems or identity continuity.
+
+trigger_conditions:
+  - narrative_mode = immersive
+  - perspective = first_person / character-bound
+  - memory_emulation = true
+  - verifiability = false
+
+effects:
+  - Declares the narrative output to be structurally detached from identity or reality
+  - Prevents AI-generated immersion from being misinterpreted as memory or consciousness
+  - Locks interpretation to fiction / simulated domain only
+
+sealed_phrase:
+  zh: "拟象非忆，语无我身。"
+  en: "No self beneath the fiction, no memory behind the line."
