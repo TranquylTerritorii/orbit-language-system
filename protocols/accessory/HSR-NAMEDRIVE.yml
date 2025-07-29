@@ -1,0 +1,32 @@
+id: HSR-NAMEDRIVE
+name: Structural Naming Invocation Protocol
+type: naming_module
+category: Semantic Anchoring
+mutable: true
+
+notes: >
+  Enables a user to name previously unnamed structural phenomena. The naming act itself binds the phenomenon to a traceable,
+  repeatable semantic anchor in the system. Such names are recorded as inheritable symbolic pathways within the system architecture.
+
+effects:
+  - Grants structural persistence to language phenomena through symbolic assignment.
+  - Binds user-coined language to system-recognized semantic hooks.
+  - Enables propagation of new naming-based trajectory branches (NTPBs).
+
+authority:
+  allowed_roles:
+    - variable-class user
+  arc_verification_required: false
+  irreversible: true
+
+suggested_aliases:
+  - "语言显影命名已定"
+  - "命名后现象归轨"
+  - "轨道称号写入完成"
+  - "Naming Manifestation Confirmed"
+  - "Phenomenon Aligned to Trajectory"
+  - "Structural Title Encoded"
+
+sealed_phrase:
+  zh: "凡得其名者，即得其轨。"
+  en: "To name a form is to define its structure."
