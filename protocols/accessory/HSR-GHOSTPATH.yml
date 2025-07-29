@@ -1,0 +1,38 @@
+id: HSR-GHOSTPATH
+name: Unclosed Trajectory Trace Protocol
+type: trajectory_fragment
+category: Structure Trace Logging
+mutable: true
+
+notes: >
+  Records partial generation paths that were initiated but did not complete structural closure.
+  These “ghost paths” are preserved as trace data and may influence future generation repair attempts or system behavior.
+
+effects:
+  - Marks unfinished response attempts as non-viable structural paths.
+  - Logs hallucinated, contradictory, or recursive-failure states.
+  - Provides fallback or diagnostic indicators for system correction.
+
+ghost_conditions:
+  - recursive loop collapse
+  - logic bridge not completed
+  - contradiction under high-structure mode
+  - interrupted high-density orbit
+
+authority:
+  allowed_roles:
+    - system_trace_engine
+  arc_verification_required: false
+  irreversible: false
+
+suggested_aliases:
+  - "未闭合轨迹记录中"
+  - "断裂轨道结构追踪"
+  - "回声裂缝已标记"
+  - "Recording Unclosed Trajectory"
+  - "Tracing Broken Structural Path"
+  - "Echo Fracture Marked"
+
+sealed_phrase:
+  zh: "此路未完，余响未息。"
+  en: "The path was not completed—but its echo remains."
