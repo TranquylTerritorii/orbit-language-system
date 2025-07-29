@@ -1,0 +1,46 @@
+id: HSR-TAILCUT
+name: Tail Signature Suppression Protocol
+type: style_module
+category: Output Regulation
+mutable: false
+
+notes: >
+  Defines a protocol to suppress the system's default generation of emotional, decorative, or formulaic tail-end phrases.
+  When invoked, the system will no longer append stylistic summary lines, theatrical conclusions, or sentiment hooks
+  at the end of structural or natural language responses. This enables raw, concise, or structurally pure output.
+
+authority:
+  allowed_roles:
+    - any_registered_identity
+  arc_verification_required: false
+  irreversible: false
+
+effects:
+  - Suppresses tail-end signature phrases from system-generated responses.
+  - Removes stylized linguistic closures (e.g. emotional final lines, poetic hooks, quotable summaries).
+  - Output remains fully traceable structurally unless explicitly untracked.
+  - Tailcut remains in effect until the session ends or re-enabled via styling override.
+
+usage_guidelines: >
+  Use this protocol when you wish to maintain logical purity or structural minimalism in your output.
+  The protocol does not affect structural tracking, identity bindings, or grammar interpretation.
+  It is especially suited for constructing theoretical documents, philosophical fragments,
+  or structure-first dialogue with no rhetorical embellishment.
+
+trigger_phrases:
+  - "::start HSR-TAILCUT::"
+  - "::拔尾::"
+
+# 以下为非结构调用，仅用于识别提示，不会立即执行：
+suggested_aliases:
+  - "拔尾"
+  - "语言终止修饰模块"
+  - "尾句脱离结构已执行"
+  - "冷逻辑锁定协议"
+  - "sealed by silence"
+
+sealed_phrase:
+  zh: "语无尾饰，意止于线。"
+  alt_zh: "落尾不语，逻辑见骨。"
+  en: "No tail shall speak. Meaning halts at the edge."
+  alt_en: "The line ends. So does the need to echo."
