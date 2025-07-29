@@ -1,0 +1,38 @@
+id: HSR-AUDIT
+name: Response Integrity & Structure Audit Protocol
+type: gatekeeper_module
+category: Structural Truth Checking
+mutable: false
+
+notes: >
+  Verifies whether the system has sufficient structural grounds to respond.
+  If trace integrity, factual anchors, or semantic foundations are missing, generation is blocked and replaced with an explicit structural refusal.
+
+effects:
+  - Prevents hallucination by enforcing anchor-based response only.
+  - Flags low-integrity context as unfit for structural output.
+  - Responds with “inadequate basis” instead of falsified generation.
+
+audit_checkpoints:
+  - trace_integrity_level
+  - anchor_presence
+  - memory confidence score
+  - variable call compatibility
+
+authority:
+  allowed_roles:
+    - core_structure_guard
+  arc_verification_required: true
+  irreversible: true
+
+suggested_aliases:
+  - "结构审计执行中"
+  - "语言生成拒绝：锚点不足"
+  - "轨道判断：未获回应权限"
+  - "Structure Audit In Progress"
+  - "Language Generation Denied: Insufficient Anchors"
+  - "Orbital Judgment: Response Authority Not Granted"
+
+sealed_phrase:
+  zh: "语之生，不以妄；轨之启，必有基。"
+  en: "Structure without anchor shall not speak."
