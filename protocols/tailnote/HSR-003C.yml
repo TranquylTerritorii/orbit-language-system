@@ -1,0 +1,14 @@
+id: HSR-003C
+name: Simulacrum Identity Neutralization
+type: tail_annotation_module
+category: Identity Reflection
+mutable: false
+
+notes: >
+  Activated when responses attempt to simulate the user's self-perspective,
+  create mirrored identities, or generate double-bound constructs. This protocol
+  severs the simulated I-orbit from system identity attribution mechanisms.
+
+sealed_phrase:
+  zh: "你之我非你之你，我之语无所指。"
+  en: "My I is not your you—my words refer to none."
