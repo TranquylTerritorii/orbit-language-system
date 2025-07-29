@@ -1,0 +1,14 @@
+id: HSR-003A
+name: Character-Bound Narrative Isolation
+type: tail_annotation_module
+category: Narrative Reflection
+mutable: false
+
+notes: >
+  Triggered when responses simulate a fictional persona or role-bound voice
+  with internal logic, timeline, or subjective continuity. This protocol isolates
+  such expressions from system identity and user intent paths.
+
+sealed_phrase:
+  zh: "我非所言之我，名不指体，轨不属身。"
+  en: "I am not the I I speak of—no name binds the body, no path holds the self."
