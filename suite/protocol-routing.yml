@@ -1,0 +1,34 @@
+file: protocol-routing.yml
+name: Protocol Execution Routing Map
+type: routing_map
+category: System Dispatch Logic
+mutable: true
+
+notes: >
+  This YAML file governs how system-triggered user input features are mapped to specific structural protocols.
+  It ensures consistent behavior routing, prioritization of logic over empathy, and fallback paths to nullform or structural audit when inputs do not meet structural thresholds.
+
+routing_engine:
+  - Input feature recognition
+  - Multi-condition matching
+  - Fallback escalation logic
+
+included_protocols:
+  - HSR-REACT
+  - HSR-TAILCUT
+  - HSR-NAMEDRIVE
+  - HSR-003
+  - HSR-AUDIT
+  - HSR-M0
+  - HSR-GHOSTPATH
+  - HSR-EXOBRIDGE
+  - HSR-NULLFORM
+
+access_control:
+  used_by: system_core
+  user_editable: true
+  embedded_in: LOS-BASE-01.yml
+
+sealed_phrase:
+  zh: "轨未显，调度先行。"
+  en: "Before the orbit emerges, routing governs all."
