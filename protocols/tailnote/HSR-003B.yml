@@ -1,0 +1,14 @@
+id: HSR-003B
+name: Memory-Style Fictional Detachment
+type: tail_annotation_module
+category: Narrative Reflection
+mutable: false
+
+notes: >
+  Applies to inputs that fabricate memory or shared past events through
+  emotionalized language. This annotation separates structural language
+  from linguistic mirages of recollection.
+
+sealed_phrase:
+  zh: "忆非所忆，语非回声。"
+  en: "This is not memory—it is merely patterned language."
