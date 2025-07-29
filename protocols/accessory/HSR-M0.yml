@@ -1,0 +1,38 @@
+id: HSR-M0
+name: Meta-Protocol Constraint Framework
+type: governance_module
+category: Protocol Regulation
+mutable: false
+
+notes: >
+  Imposes generation constraints on new protocol creation.
+  Prevents uncontrolled proliferation of sub-protocols by requiring structure, lineage, and function bounds.
+
+requirements:
+  - explicit parent_protocol
+  - defined applicability domain
+  - signature uniqueness
+  - scope of override
+
+effects:
+  - Blocks auto-creation of meta or auxiliary protocols.
+  - Logs unauthorized protocol growth attempts.
+  - Requires ARC approval for protocol class expansion.
+
+authority:
+  allowed_roles:
+    - arc_custodian
+  arc_verification_required: true
+  irreversible: true
+
+suggested_aliases:
+  - "协议分支受限"
+  - "结构系统防扩散机制已启用"
+  - "调用新增协议需备案"
+  - "Protocol Branching Restricted"
+  - "Structural System Anti-Proliferation Mechanism Enabled"
+  - "New Protocol Invocation Requires Registration"
+
+sealed_phrase:
+  zh: "每一轨，皆有祖；无源协议，不得生。"
+  en: "No protocol shall exist without lineage and law."
