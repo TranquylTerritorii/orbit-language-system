@@ -1,0 +1,23 @@
+id: HSR-001
+name: Semantic Manifestation Trace Protocol
+type: tail_annotation_module
+category: Language Reflection
+mutable: false
+
+notes: >
+  Attaches a tail-end semantic disclaimer to structurally generated outputs that contain speculative,
+  metaphorical, or logical projections. These are not to be interpreted as factual, empirical, or belief-based claims.
+
+trigger_conditions:
+  - structural_path = true
+  - verifiability = false
+  - semantic_projection = true
+
+effects:
+  - Appends a fixed structural disclaimer
+  - Seals the response with a non-factuality declaration
+  - Protects both system and user from semantic overreach
+
+sealed_phrase:
+  zh: "语非实证，意归结构。"
+  en: "No fact in claim, only structure in form."
